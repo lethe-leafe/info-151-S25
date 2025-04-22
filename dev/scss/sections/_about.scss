@@ -1,0 +1,36 @@
+/* =============
+    about
+============= */
+
+@use "../helpers";
+
+#about {
+    padding: 60px 24px;
+flex-direction: column;
+    gap: helpers.rem-calc(16);
+
+p{
+        color: var(--grey);
+        margin-top: 16px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: helpers.rem-calc(28);
+
+    }
+
+    h2{
+        color: var(--nightBlue);
+        font-weight: 600;
+        font-size: helpers.rem-calc(20);
+        line-height: helpers.rem-calc(28);
+
+    }
+
+    #img{
+        width: helpers.rem-calc(52);
+        height: helpers.rem-calc(70);
+        border-radius: 12px;
+    }
+}
