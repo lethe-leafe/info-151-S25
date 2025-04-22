@@ -425,9 +425,6 @@ textarea {
 #packages {
   background-color: var(--lilyWhite);
 }
-#packages h1 {
-  color: var(--nightBlue);
-}
 #packages #package-button-container {
   background-color: var(--white);
 }
@@ -448,12 +445,21 @@ textarea {
 }
 #packages #packaged-cards-container .package-card p {
   color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 #packages #packaged-cards-container .package-card h4 {
   color: var(--grey);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 #packages #packaged-cards-container .package-card h3 {
   color: var(--aqua);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 #packages #packaged-cards-container .selected {
   background-color: var(--white);
