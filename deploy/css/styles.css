@@ -354,6 +354,15 @@ ul li {
   width: 100%;
 }
 
+.content-padding {
+  padding: 40px 24px;
+}
+@media (min-width: 1200px) {
+  .content-padding {
+    padding: 100px 24px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -430,14 +439,51 @@ textarea {
   background-color: var(--lilyWhite);
   padding: 56px 24px;
 }
-#hero section article p {
+@media (min-width: 1200px) {
+  #hero {
+    padding: 100px 24px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-coontent-container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "hero-img" "hero-content";
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-coontent-container {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+        grid-template-areas: "hero-content hero-img";
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-coontent-container section {
+    grid-area: hero-content;
+    padding: 0 15vw;
+  }
+}
+@media (min-width: 992px) {
+  #hero #hero-coontent-container section {
+    padding: 0 25vw;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-coontent-container section {
+    padding: 0;
+  }
+}
+#hero #hero-coontent-container section article p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 24px;
 }
-#hero section article button {
+#hero #hero-coontent-container section article button {
   background-color: var(--white);
   border: none;
   height: 60px;
@@ -445,21 +491,47 @@ textarea {
   border-radius: 100%;
   margin-left: 30px;
 }
-#hero section article #hero-card {
+#hero #hero-coontent-container section article #hero-card {
   background-color: var(--snowDrop);
   margin-top: 70px;
   padding: 24px 20px;
   border-radius: 12px;
 }
-#hero section article #hero-card h5 {
+#hero #hero-coontent-container section article #hero-card h5 {
   color: var(--nightBlue);
   font-weight: 600;
   font-size: 0.875rem;
 }
-#hero section article #hero-card p {
+#hero #hero-coontent-container section article #hero-card p {
   font-size: 0.875rem;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  #hero #hero-coontent-container aside {
+    grid-area: hero-img;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-coontent-container section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-coontent-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-coontent-container section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-coontent-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+
 /* =============
     packages
 ============= */
