@@ -8,6 +8,36 @@
     padding: 107px 24px;
     text-align: center;
 
+    #communication-top{
+
+        @include helpers.md{
+
+        }
+
+        @include helpers.lg{
+            padding: 107px 366px 48px;
+
+        }
+    
+        @include helpers.xl{
+            padding: 107px 366px 48px;
+
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+    }
+    .img-scaler{
+        @include helpers.xl{
+            padding:0px 366px 48px;
+    
+            max-width: 1200px;
+            margin: 0 auto;
+    
+        }
+    }
+
+
     p{
         color: var(--grey);
         margin-top: 16px;
@@ -18,12 +48,12 @@
         line-height: helpers.rem-calc(28);
 
     }
+    // img{
 
-    img{
-
-        width: helpers.rem-calc(354);
-        height: helpers.rem-calc(185.76);
+    //     width: helpers.rem-calc(354);
+    //     height: helpers.rem-calc(185.76);
 
 
-    }
+    // }
+
 }

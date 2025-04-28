@@ -31,7 +31,7 @@
     
         section{
             @include helpers.md{
-                grid-area: hero-content;
+                grid-area: "hero-content";
                 padding: 0 15vw;
             }
 

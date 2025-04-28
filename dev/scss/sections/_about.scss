@@ -6,8 +6,43 @@
 
 #about {
     padding: 60px 24px;
-flex-direction: column;
+    flex-direction: column;
     gap: helpers.rem-calc(16);
+
+    @include helpers.md{
+        display:grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas:"about-content"
+                            "about-img";        
+    }
+
+    @include helpers.xl{
+        grid-template-columns: 50% auto;
+        grid-template-areas: "about-content about-img";
+
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+    section{
+
+        #about-top{
+            
+        }
+        @include helpers.md{
+            grid-area: about-content;
+            padding: 0 15vw;
+        }
+
+        @include helpers.lg{
+            padding: 0 25vw;
+        }
+
+        @include helpers.xl{
+            padding: 0;
+        }
+    }
 
     p{
         color: var(--grey);
@@ -28,9 +63,5 @@ flex-direction: column;
 
     }
 
-    #img{
-        width: helpers.rem-calc(52);
-        height: helpers.rem-calc(70);
-        border-radius: 12px;
-    }
+
 }

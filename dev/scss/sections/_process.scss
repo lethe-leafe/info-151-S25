@@ -21,7 +21,7 @@
     .center-content{
         text-align: center;
     }
-    #list-container{
+    .list-container{
             
         li{
             margin-bottom: 24px;
@@ -36,8 +36,32 @@
             height: 70px;
             border-radius: 10px;
         }
+
+        @include helpers.xl{
+            display: grid;
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "card-1 card-2 card-3";
+        }
+
+        #card-1{
+            @include helpers.md{
+                grid-area: card-1;
+            }
+        }
+        #card-2{
+            @include helpers.md{
+                grid-area: card-2;
+            }
+        }
+        #card-3{
+            @include helpers.md{
+                grid-area: card-3;
+            }
     }
 
+    }
     h2{
         color: var(--nightBlue);
         font-weight: 600;
