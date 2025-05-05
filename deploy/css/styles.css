@@ -581,12 +581,25 @@ textarea {
   padding: 16px;
   border-radius: 14px;
 }
+#packages #packaged-cards-container .package-card .package-card-img {
+  width: 100%;
+  border-radius: 14px;
+  height: 273px;
+  background-size: cover;
+  background-position: center;
+}
 #packages #packaged-cards-container .package-card p {
   color: var(--nightBlue);
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin: 20px 0 16px;
+}
+#packages #packaged-cards-container .package-card .user-icons li {
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  border: 1px solid var(--white);
 }
 #packages #packaged-cards-container .package-card h4 {
   color: var(--grey);
@@ -608,15 +621,56 @@ textarea {
     grid-area: card-1;
   }
 }
+#packages #packaged-cards-container #card-1 .package-card-img {
+  background-image: url(../img/packages/card-1.jpg);
+}
+#packages #packaged-cards-container #card-1 .icon-1 {
+  background-image: url(../img/packages/user-1.jpg);
+}
+#packages #packaged-cards-container #card-1 .icon-2 {
+  background-image: url(../img/packages/user-3.jpg);
+  background-position: 80% 80%;
+}
+#packages #packaged-cards-container #card-1 .icon-3 {
+  background-image: url(../img/packages/user-2.jpg);
+}
 @media (min-width: 768px) {
   #packages #packaged-cards-container #card-2 {
     grid-area: card-2;
   }
 }
+#packages #packaged-cards-container #card-2 .package-card-img {
+  background-image: url(../img/packages/card-3.jpg);
+}
+#packages #packaged-cards-container #card-2 .icon-1 {
+  background-image: url(../img/packages/user-5.jpg);
+  background-position: center 35%;
+}
+#packages #packaged-cards-container #card-2 .icon-2 {
+  background-image: url(../img/packages/user-3.jpg);
+  background-position: 80% 80%;
+}
+#packages #packaged-cards-container #card-2 .icon-3 {
+  background-image: url(../img/packages/user-4.jpg);
+}
 @media (min-width: 768px) {
   #packages #packaged-cards-container #card-3 {
     grid-area: card-3;
   }
+}
+#packages #packaged-cards-container #card-3 .package-card-img {
+  background-image: url(../img/packages/card-2.jpg);
+}
+#packages #packaged-cards-container #card-3 .icon-1 {
+  background-image: url(../img/packages/user-5.jpg);
+  background-position: center 35%;
+}
+#packages #packaged-cards-container #card-3 .icon-2 {
+  background-image: url(../img/packages/user-3.jpg);
+  background-position: 80% 80%;
+}
+#packages #packaged-cards-container #card-3 .icon-3 {
+  background-image: url(../img/packages/user-4.jpg);
 }
 
 /* =============
